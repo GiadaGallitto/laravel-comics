@@ -11,7 +11,7 @@
         @foreach ($comicsList as $comicEl)            
         <div class="comics-card">
             <div class="image-box">
-                <img src="{{ $comicEl['thumb'] }}" alt="">
+                <img src="{{ $comicEl['thumb'] }}" alt="card">
             </div>
             <div class="text-box">
                 <p>{{$comicEl['series']}}</p>
@@ -25,9 +25,12 @@
 
 <section class="icons-nav">
     <div class="icons-container">
+        @foreach ($iconList as $iconEl)
         <div class="banner-element">
-            
+            <img src="{{ Vite::asset('resource/assets/img/{{$iconEl['icon']}}')}}" alt="icon">
+            <p>{{$iconEl['text']}}</p>
         </div>
+        @endforeach
     </div>
 </section>
 @endsection

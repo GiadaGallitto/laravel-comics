@@ -90,10 +90,6 @@
             [
                 "icon" => "buy-comics-shop-locator.png",
                 "text" => "Comic Shop Locator",
-            ],
-            [
-                "icon" => "buy-dc-power-visa.svg",
-                "text" => "Dc Power Visa",
             ]
         ]
             ];
