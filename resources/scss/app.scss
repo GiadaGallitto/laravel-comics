@@ -8,6 +8,7 @@ body{
 
 header {
     background-color: white;
+    width: 100%;
     .header-container{
         width: 70%;
         margin: 0 auto;
@@ -31,6 +32,7 @@ header {
             list-style-type: none;
             height: 100%;
             margin-bottom: 0;
+            
         
             li{
                 display: inline-block;
@@ -41,16 +43,25 @@ header {
                 font-size: 0.9rem;
                 border-bottom: 2px solid white;
         
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
                 &.active{
                     color: #0282f9;
                     border-bottom: 2px solid #0282f9;
                 }
         
-                &:hover{
-                    color: #0282f9;
+                &:hover {
                     border-bottom: 2px solid #0282f9;
                     cursor: pointer;
                 }
+
+                &:hover a{
+                    color: #0282f9;
+                }
+
             }
         }
     }
