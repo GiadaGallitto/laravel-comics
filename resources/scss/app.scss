@@ -66,3 +66,90 @@ header {
         }
     }
 }
+
+main {
+    .content-part{
+        background-color: black;
+        padding-bottom: 2rem;
+        .jumbotron{
+            height: 450px;
+            background-image: url('../assets/img/jumbotron.jpg');
+            background-size: cover;
+        }
+    
+        .comics-grid{
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 4rem;
+            position: relative;
+    
+            .current{
+                position: absolute;
+                left: 0;
+                top: -28px;
+            }
+
+            .comics-card{
+                width: calc((100% / 6) - 2rem);
+                display: flex;
+                flex-direction: column;
+                margin: 0 1rem;
+                .image-box{
+                    width: 100%;
+                    height: 60%;
+                    overflow: hidden;
+        
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text-box{
+                    padding-top: 1.5rem;
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    color: white;
+                }
+            }
+        }
+        .more-btn{
+            text-align: center;
+            width: 12%;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    
+        .blue-btn{
+            text-transform: uppercase;
+            color: white;
+            background-color: #0282f9;
+            padding: 0.8rem 2rem;
+        }
+    };
+    .icons-nav{
+        background-color: #0282f9;
+        padding: 4rem 0;
+        
+        .icons-container{
+            width: 70%;
+            margin: 0 auto;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            .banner-element{
+                display: flex;
+                align-items: center;
+                margin: 0 0.5rem;
+    
+                img{
+                    width: 55px;
+                }
+    
+                p{
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
